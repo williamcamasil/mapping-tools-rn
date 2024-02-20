@@ -1,0 +1,37 @@
+{
+  "name": "mapping-tools-rn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx --yes only-allow yarn"
+  },
+  "bin": {
+    "convert-eslint-output": "./lib/scripts/convert-eslint-output.js",
+    "find-in-source-map": "./lib/scripts/find-in-source-map.sh",
+    "fix-dependency-branches": "./lib/scripts/fix-dependency-branches-zx.mjs",
+    "generate-source-map": "./lib/scripts/generate-source-map.sh",
+    "mappingdigital-pre-commit": "./lib/scripts/mappingdigital-pre-commit.sh",
+    "mappingdigital-pre-push": "./lib/scripts/mappingdigital-pre-push.sh",
+    "run-sonar-scanner": "./lib/scripts/run-sonar-scanner.sh",
+    "sync-with-core": "./lib/scripts/sync-with-core.js",
+    "upgrade-app-modules": "./lib/scripts/upgrade-app-modules.js",
+    "validate-dependencies": "./lib/scripts/validate-dependencies.js"
+  },
+  "dependencies": {
+    "@commitlint/cli": "17.6.1",
+    "@commitlint/config-angular": "17.6.1",
+    "@commitlint/config-angular-type-enum": "17.4.0",
+    "@testing-library/jest-native": "5.4.2",
+    "@testing-library/react-hooks": "8.0.1",
+    "@testing-library/react-native": "12.1.1",
+    "@tsconfig/react-native": "2.0.3",
+    "@types/jest": "29.5.1",
+    "@types/react-test-renderer": "18.0.0",
+    "babel-jest": "29.5.0",
+    "chokidar": "3.5.3",
+    "jest": "29.5.0",
+    "react-test-renderer": "18.2.0",
+    "source-map-cli": "1.0.0",
+    "zx": "7.1.1"
+  }
+}
